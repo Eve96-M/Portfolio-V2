@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*NavBar styles*/
+
+.Logo-container {
+  margin: 1.3rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 22px;
+}
+
+.Logo-container img {
+  height: 30px;
+  width: 40px;
+}
+
+.NavBar-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 14px;
+  height: 80px;
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  color: black;
+  transition: all 0.4s;
+}
+
+.NavBar-Container-dark {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 14px;
+  height: 80px;
+  background-color: rgb(29, 28, 28);
+  height: 80px;
+  width: 100%;
+  color: white;
+  transition: all 0.4s;
+}
+
+.Nav-elements {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 105%;
+  margin: 0 2rem 0 2rem;
+  list-style: none;
+  font-size: 56px;
+  transition: all 0.5s;
+  background-color: rgba(240, 248, 255, 0.048);
+}
+
+.hide {
+  transform: translateY(-110%);
+}
+
+.Social-elements {
+  display: flex;
+  flex-direction: row;
+  margin: 1.3rem 2rem 0 2rem;
+  list-style: none;
+}
+
+.Social-elements li {
+  margin: 0 0.6rem;
+}
+
+.Social-elements-link:hover img {
+  transition: all 0.4s;
+}
+
+.Social-elements-link:hover img {
+  transform: scale(1.1);
+}
+
+.Links {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.6rem;
+  margin: 2rem 0.5rem;
+
+}
+
+.Social-elements li img {
+  height: 40px;
+  width: 40px;
+}
+
+
+.Light-filter-image{
+  filter: invert(0%) sepia(94%) saturate(11%) hue-rotate(324deg) brightness(103%) contrast(100%);
+}
+
+.Dark-filter-image{
+  filter: invert(100%) sepia(100%) saturate(25%) hue-rotate(67deg) brightness(107%) contrast(105%);
+}
+
+/*Theme Switcher*/
+
+.Menu-switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 3rem;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 10rem;
+  right: 0;
+  z-index: 10;
+  border-radius: 1rem 0 0 1rem;
+}
+
+
+.Mobile-button {
+  height: 1.5rem;
+  width: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0.25rem 0;
+  border-radius: 5px;
+  border: transparent;
+  background-color: white;
+}
+
+.Mobile-button:hover .Mobile-button-image {
+  transform: scale(1.15);
+
+}
+
+.Mobile-button-image{
+  object-fit: contain;
+  height: 1.2rem;
+  width: 1.8rem;
+  transition: all 0.4s ;
+}
+
+.Language-button{
+  border: transparent;
+  width: 2rem;
+  background-color: transparent;
+  margin: 0.25rem 0;
+}
+
+.Language-button:hover .Flags{
+  transform: scale(1.15);
+}
+
+.Flags{
+  object-fit: contain;
+  width: 2rem;
+  height: 1.5rem;
+  transition: all 0.4s ;
+  margin: 0.25rem 0;
+}
+
+.Theme-button{
+  border: transparent;
+  width: 2rem;
+  background-color: transparent;
+}
+
+.Theme-button-image{
+  object-fit: contain;
+  height: 1.2rem;
+  width: 1.8rem;
+  transition: all 0.4s ;
+}
+
+/*responsiveness*/
+
+@media screen and (min-width:768px) {
+
+  .Mobile-button {
+    display: none;
+  }
+
+  .Nav-elements {
+    position: static;
+    flex-direction: row;
+    font-size: 22px;
+    background-color: transparent;
+  }
+
+  .hide {
+    transform: translateY(0);
+  }
+
+  .Links {
+    margin: 0 0.5rem;
+  }
+}

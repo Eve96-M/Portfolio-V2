@@ -1,0 +1,147 @@
+.Projects{
+    color: black;
+    background-color: white;
+    transition: all 0.4s;
+}
+
+.Projects-dark{
+    background-color: rgb(29, 28, 28);
+    color: white;
+    transition: all 0.4s;
+}
+
+.Projects-title {
+    margin-left: 2rem;
+    font-size: 40px;
+}
+
+.Projects-container {
+    display: flex;
+    padding: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: .3rem;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: transparent;
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    border-radius: 3rem ;
+    width: 80%;
+    transition:0.5s all;
+}
+
+
+.Card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.03);
+}
+
+.Card h2 {
+    margin: 0.5rem 0 0 0;
+    padding: .3rem;
+}
+
+.Card p {
+    margin: 0.5rem 0 0 0;
+    padding: .3rem;
+    font-size: 14px;
+}
+
+.Card img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 3rem 3rem 0 0 ;
+}
+
+.Card-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: .3rem;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: transparent;
+    background-color: rgba(255, 255, 255, 0.925);
+    color: rgb(0, 0, 0);
+    border-radius: 3rem ;
+    width: 80%;
+    transition:0.5s all;
+}
+
+.Card-dark:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.03);
+}
+
+.Card-dark h2 {
+    margin: 0.5rem 0 0 0;
+    padding: .3rem;
+}
+
+.Card-dark p {
+    margin: 0.5rem 0 0 0;
+    padding: .3rem;
+    font-size: 14px;
+}
+
+.Card-dark img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 3rem 3rem 0 0 ;
+}
+
+.Tags-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+.Card-button-container {
+    margin: 0 0 1rem 0;
+}
+
+.Card-button {
+    width: 25%;
+    height: 2rem;
+    margin: 0 1rem;
+    border-radius: 2rem;
+}
+
+@media screen and (min-width:768px) {
+    .Card {
+        width: calc(50% - 2rem);
+    }
+
+    .Card-dark {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .Card {
+        width: calc(33.33% - 2rem);
+    }
+
+    .Card-dark {
+        width: calc(33.33% - 2rem);
+    }
+
+    .Projects-container {
+        justify-content: left;
+    }
+
+}
