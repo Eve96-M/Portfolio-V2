@@ -57,7 +57,8 @@
   list-style: none;
   font-size: 56px;
   transition: all 0.5s;
-  background-color: rgba(240, 248, 255, 0.048);
+  background-color: rgba(114, 120, 126, 0.705);
+  z-index: 10;
 }
 
 .hide {
@@ -86,6 +87,14 @@
 .Links {
   text-decoration: none;
   color: black;
+  margin: 0 0.6rem;
+  margin: 2rem 0.5rem;
+
+}
+
+.Links-dark {
+  text-decoration: none;
+  color: white;
   margin: 0 0.6rem;
   margin: 2rem 0.5rem;
 

@@ -21,8 +21,8 @@ const Projects = ({language, theme}) => {
                                 ))}
                             </div>
                             <div className='Card-button-container'>
-                                <a href={project.Source} target="_blank"><button className='Card-button'>Code</button></a>
-                                <a href={project.Visit} target="_blank"><button className='Card-button'>Visit</button></a>
+                                <a href={project.Source} target="_blank"><button className={ theme ? 'Card-button-dark' : 'Card-button'}>Code</button></a>
+                                <a href={project.Visit} target="_blank"><button className={ theme ? 'Card-button-dark' : 'Card-button'}>Visit</button></a>
                             </div>
                         </div>
                     ))
@@ -39,8 +39,8 @@ const Projects = ({language, theme}) => {
                                 ))}
                             </div>
                             <div className='Card-button-container'>
-                                <a href={project.Source} target="_blank"><button className='Card-button'>Codigo</button></a>
-                                <a href={project.Visit} target="_blank"><button className='Card-button'>Visitar</button></a>
+                                <a href={project.Source} target="_blank"><button className={ theme ? 'Card-button-dark' : 'Card-button'}>Codigo</button></a>
+                                <a href={project.Visit} target="_blank"><button className={ theme ? 'Card-button-dark' : 'Card-button'}>Visitar</button></a>
                             </div>
                         </div>
                     ))

@@ -119,6 +119,35 @@
     height: 2rem;
     margin: 0 1rem;
     border-radius: 2rem;
+    border: transparent;
+    background-color: rgb(228, 228, 228);
+    color: black;
+    font-weight: bold;
+    transition: 0.3s all;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Card-button:hover {
+    transform: scale(1.05);
+    
+}
+
+.Card-button-dark {
+    width: 25%;
+    height: 2rem;
+    margin: 0 1rem;
+    border-radius: 2rem;
+    border: transparent;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s all;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(196, 196, 196, 0.3) 0px 7px 13px -3px, rgba(219, 219, 219, 0.2) 0px -3px 0px inset;
+}
+
+.Card-button-dark:hover {
+    transform: scale(1.05);
+    
 }
 
 @media screen and (min-width:768px) {

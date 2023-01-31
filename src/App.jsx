@@ -20,9 +20,9 @@ function App() {
             <img src="/PF.svg" alt="logo" className={theme ? 'Dark-filter-image' : 'Light-filter-image'}/><h3>{language ? "Portfolio" : "Portafolio"}</h3>
           </div>
           <ul className={menu ? 'Nav-elements' : 'Nav-elements hide'}>
-            <Link to='#Projects' smooth className='Links' onClick={() => setMenu(false)}>{language ? "Projects" : "Proyectos"}</Link>
-            <Link to='#Technologies' smooth className='Links' onClick={() => setMenu(false)}>{language ? "Technologies" : "Tecnologias"}</Link>
-            <Link to='#About' smooth className='Links' onClick={() => setMenu(false)}>{language ? "About me" : "Acerca de mi"}</Link>
+            <Link to='#Projects' smooth className={theme ? 'Links-dark' : 'Links'} onClick={() => setMenu(false)}>{language ? "Projects" : "Proyectos"}</Link>
+            <Link to='#Technologies' smooth className={theme ? 'Links-dark' : 'Links'} onClick={() => setMenu(false)}>{language ? "Technologies" : "Tecnologias"}</Link>
+            <Link to='#About' smooth className={theme ? 'Links-dark' : 'Links' }onClick={() => setMenu(false)}>{language ? "About me" : "Acerca de mi"}</Link>
           </ul>
           <ul className='Social-elements'>
             <a href='https://github.com/Eve96-M' target="_blank" className= 'Social-elements-link' ><li><img src="/Github.svg" alt="Github" className={theme ? 'Dark-filter-image' : 'Light-filter-image'}/></li></a>
